@@ -12,3 +12,7 @@
 # v1.1.0:
  +Website Update:
    Added scrolling functionality to users with different resolution screens than my own so they can view all the content!
+
+# v1.1.1:
+ +Website Update:
+   Make the website mobile friendly so that people who view the site on their phones do not get a headache!
