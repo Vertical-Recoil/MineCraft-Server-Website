@@ -190,7 +190,7 @@ class MyApp extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {
                           _launchURL(
-                              'https://discord.gg/tpArk4fhr8'); // Replace with your Discord link
+                              'https://discord.gg/Zg3cKfSf4v'); // Replace with your Discord link
                         },
                         style: ButtonStyle(
                           fixedSize: MaterialStateProperty.all(
