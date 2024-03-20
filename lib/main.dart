@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        'SpookierCraft 1.20.1',
+                        'Craft to Exile 2\n 1.20.1',
                         style: TextStyle(
                           fontSize:
                               isPhone ? 24 : 40, // Adjusted font size for phone
@@ -82,7 +82,7 @@ class MyApp extends StatelessWidget {
                                 : 30), // Adjusted font size for phone
                       ),
                       Text(
-                        '2.2.0',
+                        '2-0.5.2b',
                         style: TextStyle(
                           color: Color.fromARGB(255, 238, 255, 82),
                           fontWeight: FontWeight.bold,
@@ -95,7 +95,7 @@ class MyApp extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {
                           _launchURL(
-                              'https://drive.google.com/file/d/1HHpWpuqT6RAvJrqWrnmJ2uyc5JKvF7e4/view?usp=sharing');
+                              'https://www.curseforge.com/minecraft/modpacks/craft-to-exile-2');
                         },
                         style: ButtonStyle(
                           fixedSize: MaterialStateProperty.all(
