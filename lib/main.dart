@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color(0xFF777777),
+        backgroundColor: const Color(0xFF777777),
         appBar: AppBar(
           backgroundColor: Colors.green[900],
           title: Text(
@@ -33,17 +33,17 @@ class MyApp extends StatelessWidget {
                 Container(
                   width: isPhone ? 300 : 500, // Adjusted width for phone
                   height: 100,
-                  margin: EdgeInsets.only(bottom: 20),
-                  padding: EdgeInsets.all(20),
+                  margin: const EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: Color(0xFF9C9C9C),
+                    color: const Color(0xFF9C9C9C),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Center(
                     child: Text(
                       'The version shown as latest is required if you wish to join the server',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 116, 0, 0),
+                        color: const Color.fromARGB(255, 116, 0, 0),
                         fontSize:
                             isPhone ? 14 : 18, // Adjusted font size for phone
                         fontWeight: FontWeight.bold,
@@ -55,17 +55,17 @@ class MyApp extends StatelessWidget {
                 Container(
                   width: isPhone ? 300 : 500,
                   height: isPhone ? 200 : 300,
-                  margin: EdgeInsets.only(bottom: 20),
-                  padding: EdgeInsets.all(20),
+                  margin: const EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: Color(0xFF9C9C9C),
+                    color: const Color(0xFF9C9C9C),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        'Craft to Exile 2\n 1.20.1',
+                        'SpookierCraft',
                         style: TextStyle(
                           fontSize:
                               isPhone ? 24 : 40, // Adjusted font size for phone
@@ -82,9 +82,9 @@ class MyApp extends StatelessWidget {
                                 : 30), // Adjusted font size for phone
                       ),
                       Text(
-                        '2-0.5.2b',
+                        '2.2.0',
                         style: TextStyle(
-                          color: Color.fromARGB(255, 238, 255, 82),
+                          color: const Color.fromARGB(255, 238, 255, 82),
                           fontWeight: FontWeight.bold,
                           fontSize:
                               isPhone ? 14 : 20, // Adjusted font size for phone
@@ -95,13 +95,14 @@ class MyApp extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {
                           _launchURL(
-                              'https://www.curseforge.com/minecraft/modpacks/craft-to-exile-2');
+                              'https://drive.google.com/drive/folders/1hlZJAw_z1xaJy0oiHXPkXxHcT0GQVgQA?usp=drive_link');
                         },
                         style: ButtonStyle(
-                          fixedSize: MaterialStateProperty.all(
-                              isPhone ? Size(150, 40) : Size(200, 50)),
+                          fixedSize: WidgetStateProperty.all(isPhone
+                              ? const Size(150, 40)
+                              : const Size(200, 50)),
                           backgroundColor:
-                              MaterialStateProperty.all(Colors.lightGreen),
+                              WidgetStateProperty.all(Colors.lightGreen),
                         ),
                         child: Text(
                           'Download',
@@ -117,10 +118,10 @@ class MyApp extends StatelessWidget {
                 Container(
                   width: isPhone ? 300 : 500,
                   height: isPhone ? 200 : 275,
-                  margin: EdgeInsets.only(bottom: 20),
-                  padding: EdgeInsets.all(20),
+                  margin: const EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: Color(0xFF9C9C9C),
+                    color: const Color(0xFF9C9C9C),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Column(
@@ -151,8 +152,9 @@ class MyApp extends StatelessWidget {
                               'https://drive.google.com/drive/folders/1qKoDu74IuhV4MwgGEtny69L_eyKsUAms?usp=sharing');
                         },
                         style: ButtonStyle(
-                          fixedSize: MaterialStateProperty.all(
-                              isPhone ? Size(150, 40) : Size(200, 50)),
+                          fixedSize: MaterialStateProperty.all(isPhone
+                              ? const Size(150, 40)
+                              : const Size(200, 50)),
                           backgroundColor:
                               MaterialStateProperty.all(Colors.lightGreen),
                         ),
@@ -170,9 +172,9 @@ class MyApp extends StatelessWidget {
                 Container(
                   width: isPhone ? 200 : 300,
                   height: isPhone ? 130 : 180,
-                  padding: EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
-                    color: Color(0xFF9C9C9C),
+                    color: const Color(0xFF9C9C9C),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Column(
@@ -193,10 +195,11 @@ class MyApp extends StatelessWidget {
                               'https://discord.gg/Zg3cKfSf4v'); // Replace with your Discord link
                         },
                         style: ButtonStyle(
-                          fixedSize: MaterialStateProperty.all(
-                              isPhone ? Size(150, 40) : Size(200, 50)),
-                          backgroundColor: MaterialStateProperty.all(
-                              Color.fromARGB(255, 0, 95, 173)),
+                          fixedSize: WidgetStateProperty.all(isPhone
+                              ? const Size(150, 40)
+                              : const Size(200, 50)),
+                          backgroundColor: WidgetStateProperty.all(
+                              const Color.fromARGB(255, 0, 95, 173)),
                         ),
                         child: Text(
                           'Join Now',
